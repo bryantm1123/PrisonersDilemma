@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PrisonersDilemma
-//
-//  Created by Matt Bryant on 11/17/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
