@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		92A2BD2D2CEA0B9400C67838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92A2BD132CEA0B9100C67838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A2BD1A2CEA0B9100C67838;
+			remoteInfo = PrisonersDilemma;
+		};
+		92A2BD372CEA0B9400C67838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92A2BD132CEA0B9100C67838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A2BD1A2CEA0B9100C67838;
+			remoteInfo = PrisonersDilemma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92A2BD1B2CEA0B9100C67838 /* PrisonersDilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrisonersDilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A2BD2C2CEA0B9400C67838 /* PrisonersDilemmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrisonersDilemmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A2BD362CEA0B9400C67838 /* PrisonersDilemmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrisonersDilemmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		92A2BD1D2CEA0B9100C67838 /* PrisonersDilemma */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrisonersDilemma;
+			sourceTree = "<group>";
+		};
+		92A2BD2F2CEA0B9400C67838 /* PrisonersDilemmaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrisonersDilemmaTests;
+			sourceTree = "<group>";
+		};
+		92A2BD392CEA0B9400C67838 /* PrisonersDilemmaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrisonersDilemmaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92A2BD182CEA0B9100C67838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD292CEA0B9400C67838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD332CEA0B9400C67838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92A2BD122CEA0B9100C67838 = {
+			isa = PBXGroup;
+			children = (
+				92A2BD1D2CEA0B9100C67838 /* PrisonersDilemma */,
+				92A2BD2F2CEA0B9400C67838 /* PrisonersDilemmaTests */,
+				92A2BD392CEA0B9400C67838 /* PrisonersDilemmaUITests */,
+				92A2BD1C2CEA0B9100C67838 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92A2BD1C2CEA0B9100C67838 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92A2BD1B2CEA0B9100C67838 /* PrisonersDilemma.app */,
+				92A2BD2C2CEA0B9400C67838 /* PrisonersDilemmaTests.xctest */,
+				92A2BD362CEA0B9400C67838 /* PrisonersDilemmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92A2BD1A2CEA0B9100C67838 /* PrisonersDilemma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A2BD402CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemma" */;
+			buildPhases = (
+				92A2BD172CEA0B9100C67838 /* Sources */,
+				92A2BD182CEA0B9100C67838 /* Frameworks */,
+				92A2BD192CEA0B9100C67838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				92A2BD1D2CEA0B9100C67838 /* PrisonersDilemma */,
+			);
+			name = PrisonersDilemma;
+			packageProductDependencies = (
+			);
+			productName = PrisonersDilemma;
+			productReference = 92A2BD1B2CEA0B9100C67838 /* PrisonersDilemma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92A2BD2B2CEA0B9400C67838 /* PrisonersDilemmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A2BD432CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemmaTests" */;
+			buildPhases = (
+				92A2BD282CEA0B9400C67838 /* Sources */,
+				92A2BD292CEA0B9400C67838 /* Frameworks */,
+				92A2BD2A2CEA0B9400C67838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92A2BD2E2CEA0B9400C67838 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				92A2BD2F2CEA0B9400C67838 /* PrisonersDilemmaTests */,
+			);
+			name = PrisonersDilemmaTests;
+			packageProductDependencies = (
+			);
+			productName = PrisonersDilemmaTests;
+			productReference = 92A2BD2C2CEA0B9400C67838 /* PrisonersDilemmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92A2BD352CEA0B9400C67838 /* PrisonersDilemmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A2BD462CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemmaUITests" */;
+			buildPhases = (
+				92A2BD322CEA0B9400C67838 /* Sources */,
+				92A2BD332CEA0B9400C67838 /* Frameworks */,
+				92A2BD342CEA0B9400C67838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92A2BD382CEA0B9400C67838 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				92A2BD392CEA0B9400C67838 /* PrisonersDilemmaUITests */,
+			);
+			name = PrisonersDilemmaUITests;
+			packageProductDependencies = (
+			);
+			productName = PrisonersDilemmaUITests;
+			productReference = 92A2BD362CEA0B9400C67838 /* PrisonersDilemmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92A2BD132CEA0B9100C67838 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					92A2BD1A2CEA0B9100C67838 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					92A2BD2B2CEA0B9400C67838 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 92A2BD1A2CEA0B9100C67838;
+					};
+					92A2BD352CEA0B9400C67838 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 92A2BD1A2CEA0B9100C67838;
+					};
+				};
+			};
+			buildConfigurationList = 92A2BD162CEA0B9100C67838 /* Build configuration list for PBXProject "PrisonersDilemma" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92A2BD122CEA0B9100C67838;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 92A2BD1C2CEA0B9100C67838 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92A2BD1A2CEA0B9100C67838 /* PrisonersDilemma */,
+				92A2BD2B2CEA0B9400C67838 /* PrisonersDilemmaTests */,
+				92A2BD352CEA0B9400C67838 /* PrisonersDilemmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92A2BD192CEA0B9100C67838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD2A2CEA0B9400C67838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD342CEA0B9400C67838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92A2BD172CEA0B9100C67838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD282CEA0B9400C67838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A2BD322CEA0B9400C67838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92A2BD2E2CEA0B9400C67838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92A2BD1A2CEA0B9100C67838 /* PrisonersDilemma */;
+			targetProxy = 92A2BD2D2CEA0B9400C67838 /* PBXContainerItemProxy */;
+		};
+		92A2BD382CEA0B9400C67838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92A2BD1A2CEA0B9100C67838 /* PrisonersDilemma */;
+			targetProxy = 92A2BD372CEA0B9400C67838 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92A2BD3E2CEA0B9400C67838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92A2BD3F2CEA0B9400C67838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		92A2BD412CEA0B9400C67838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrisonersDilemma/PrisonersDilemma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrisonersDilemma/Preview Content\"";
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		92A2BD422CEA0B9400C67838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrisonersDilemma/PrisonersDilemma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrisonersDilemma/Preview Content\"";
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		92A2BD442CEA0B9400C67838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrisonersDilemma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrisonersDilemma";
+			};
+			name = Debug;
+		};
+		92A2BD452CEA0B9400C67838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrisonersDilemma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrisonersDilemma";
+			};
+			name = Release;
+		};
+		92A2BD472CEA0B9400C67838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrisonersDilemma;
+			};
+			name = Debug;
+		};
+		92A2BD482CEA0B9400C67838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV7A9X77F6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongbeard.PrisonersDilemmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PrisonersDilemma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92A2BD162CEA0B9100C67838 /* Build configuration list for PBXProject "PrisonersDilemma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2BD3E2CEA0B9400C67838 /* Debug */,
+				92A2BD3F2CEA0B9400C67838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A2BD402CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2BD412CEA0B9400C67838 /* Debug */,
+				92A2BD422CEA0B9400C67838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A2BD432CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2BD442CEA0B9400C67838 /* Debug */,
+				92A2BD452CEA0B9400C67838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A2BD462CEA0B9400C67838 /* Build configuration list for PBXNativeTarget "PrisonersDilemmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2BD472CEA0B9400C67838 /* Debug */,
+				92A2BD482CEA0B9400C67838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92A2BD132CEA0B9100C67838 /* Project object */;
+}
