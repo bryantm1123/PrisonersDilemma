@@ -25,9 +25,9 @@ class Game {
         case (.defect, .defect):
             return scoringRules.bothDefect
         case (.cooperate, .defect):
-            return scoringRules.player1CooperatesPlayer2Defects
+            return scoringRules.prisoner1CooperatesPrisoner2Defects
         case (.defect, .cooperate):
-            return scoringRules.player1DefectsPlayer2Cooperates
+            return scoringRules.prisoner1DefectsPrisoner2Cooperates
         }
     }
     
