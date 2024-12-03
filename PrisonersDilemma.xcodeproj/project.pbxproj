@@ -29,6 +29,16 @@
 		92A2BD362CEA0B9400C67838 /* PrisonersDilemmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrisonersDilemmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		92707EBB2CFF14EC00163C5C /* Exceptions for "PrisonersDilemmaTests" folder in "PrisonersDilemmaTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PrisonersDilemma.xctestplan,
+			);
+			target = 92A2BD2B2CEA0B9400C67838 /* PrisonersDilemmaTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		92A2BD1D2CEA0B9100C67838 /* PrisonersDilemma */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -37,6 +47,9 @@
 		};
 		92A2BD2F2CEA0B9400C67838 /* PrisonersDilemmaTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92707EBB2CFF14EC00163C5C /* Exceptions for "PrisonersDilemmaTests" folder in "PrisonersDilemmaTests" target */,
+			);
 			path = PrisonersDilemmaTests;
 			sourceTree = "<group>";
 		};

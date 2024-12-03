@@ -67,5 +67,21 @@ struct PrisonersDilemmaTests {
         XCTAssertEqual(prisoner1Score, 5)
         XCTAssertEqual(prisoner2Score, 0)
     }
-
+    
+    // Iterations tests
+    @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResultOverIteration() {
+        let game = Game(
+            prisoner1: PrisonerCatelog.Defector(),
+            prisoner2: PrisonerCatelog.Cooperator(),
+            scoringRules: Standard()
+        )
+        
+        game.play(iterations: 5)
+        
+        let prisoner1Score = game.getScores().0
+        let prisoner2Score = game.getScores().1
+        
+        XCTAssertEqual(prisoner1Score, 25)
+        XCTAssertEqual(prisoner2Score, 0)
+    }
 }

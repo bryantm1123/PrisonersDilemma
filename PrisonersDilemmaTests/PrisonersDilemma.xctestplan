@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "E4570AA1-644B-429B-AF38-CF5081202109",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PrisonersDilemma.xcodeproj",
+      "identifier" : "92A2BD1A2CEA0B9100C67838",
+      "name" : "PrisonersDilemma"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PrisonersDilemma.xcodeproj",
+        "identifier" : "92A2BD2B2CEA0B9400C67838",
+        "name" : "PrisonersDilemmaTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PrisonersDilemma.xcodeproj",
+        "identifier" : "92A2BD352CEA0B9400C67838",
+        "name" : "PrisonersDilemmaUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

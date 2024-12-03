@@ -31,13 +31,15 @@ class Game {
         }
     }
     
-    public func play() { // TODO: Extend with iterations
-        let scores = computeScores(
-            prisoner1Action: prisoner1.action(),
-            prisoner2Action: prisoner2.action()
-        )
-        prisoner1.score += scores.0
-        prisoner2.score += scores.1
+    public func play(iterations: Int = 1) {
+        for _ in 0...iterations {
+            let scores = computeScores(
+                prisoner1Action: prisoner1.action(),
+                prisoner2Action: prisoner2.action()
+            )
+            prisoner1.score += scores.0
+            prisoner2.score += scores.1
+        }
     }
     
     public func getScores() -> (Int, Int) {
