@@ -31,8 +31,8 @@ class Game: ObservableObject {
         }
     }
     
-    public func play(iterations: Int = 1) {
-        for _ in 0...iterations {
+    public func play(iterations: Int) {
+        for _ in 1...iterations {
             let scores = computeScores(
                 prisoner1Action: prisoner1.action,
                 prisoner2Action: prisoner2.action

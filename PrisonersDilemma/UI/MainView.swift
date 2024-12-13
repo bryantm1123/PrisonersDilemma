@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var game: Game = Game.Default
+    @State var iterations: Double = 1.0
     
     var body: some View {
         VStack {
@@ -16,8 +17,9 @@ struct MainView: View {
                 PrisonerStack(prisoner: $game.prisoner2)
             }
             PlayButton {
-                game.play()
+                game.play(iterations: Int(iterations))
             }
+            SliderView(iterations: $iterations)
         }
         .frame(width: 600, height: 200)
         .padding()
@@ -25,4 +27,5 @@ struct MainView: View {
 }
 
 #Preview {
+    MainView(game: Game.Default)
 }
