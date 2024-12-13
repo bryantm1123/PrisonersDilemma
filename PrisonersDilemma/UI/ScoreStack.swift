@@ -1,18 +1,28 @@
 import SwiftUI
 
 struct ScoreStack: View {
-    // TODO: Could have a @State private var for the scores
+    @Binding var prisoner1: Prisoner
+    @Binding var prisoner2: Prisoner
     var body: some View {
         VStack {
             Text("Score")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                 .font(.title2)
-            Text("0 : 0") // TODO: Set with score of round
+            Text("\(prisoner1.score) : \(prisoner2.score)") //
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
         }
     }
 }
 
 #Preview {
-    ScoreStack()
+    struct Preview: View { // TODO: Maybe DRY up this preview struct
+        @State var prisoner1 = PrisonerCatalog.Cooperator
+        @State var prisoner2 = PrisonerCatalog.Defector
+        var body: some View {
+            ScoreStack(
+                prisoner1: $prisoner1,
+                prisoner2: $prisoner2)
+        }
+    }
+    return Preview()
 }

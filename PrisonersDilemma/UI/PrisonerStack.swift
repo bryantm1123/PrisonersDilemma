@@ -18,9 +18,6 @@ struct PrisonerStack: View {
                     Text("Play Style")
                 }
             .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
-            Text("Points")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 1, trailing: 0))
-            Text("\(prisoner.score)")
         }
     }
 }
