@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ScoreStack: View {
+    // TODO: Could have a @State private var for the scores
     var body: some View {
         VStack {
             Text("Score")

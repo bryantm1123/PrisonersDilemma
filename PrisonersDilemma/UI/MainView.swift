@@ -1,22 +1,24 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var game: Game = Game.Default
+    
     var body: some View {
         VStack {
             HStack {
-                PrisonerStack(name: "Prisoner 1")
+                PrisonerStack(prisoner: $game.prisoner1)
                 Spacer()
                 ScoreStack()
                 Spacer()
-                PrisonerStack(name: "Prisoner 2")
+                PrisonerStack(prisoner: $game.prisoner2)
             }
             PlayButton()
         }
-        .frame(width: 400, height: 200)
+        .frame(width: 600, height: 200)
         .padding()
     }
 }
 
 #Preview {
-    MainView()
+    MainView(game: Game.Default)
 }

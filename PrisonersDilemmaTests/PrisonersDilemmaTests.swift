@@ -6,8 +6,8 @@ struct PrisonersDilemmaTests {
 
     @Test func testBothCooperateGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatelog.Cooperator(),
-            prisoner2: PrisonerCatelog.Cooperator(),
+            prisoner1: PrisonerCatalog.Cooperator(),
+            prisoner2: PrisonerCatalog.Cooperator(),
             scoringRules: Standard()
         )
         
@@ -22,8 +22,8 @@ struct PrisonersDilemmaTests {
     
     @Test func testBothDefectGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatelog.Defector(),
-            prisoner2: PrisonerCatelog.Defector(),
+            prisoner1: PrisonerCatalog.Defector(),
+            prisoner2: PrisonerCatalog.Defector(),
             scoringRules: Standard()
         )
         
@@ -38,8 +38,8 @@ struct PrisonersDilemmaTests {
     
     @Test func testPrisonerOneCooperatesPrisonerTwoDefectsGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatelog.Cooperator(),
-            prisoner2: PrisonerCatelog.Defector(),
+            prisoner1: PrisonerCatalog.Cooperator(),
+            prisoner2: PrisonerCatalog.Defector(),
             scoringRules: Standard()
         )
         
@@ -54,8 +54,8 @@ struct PrisonersDilemmaTests {
     
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatelog.Defector(),
-            prisoner2: PrisonerCatelog.Cooperator(),
+            prisoner1: PrisonerCatalog.Defector(),
+            prisoner2: PrisonerCatalog.Cooperator(),
             scoringRules: Standard()
         )
         
@@ -71,8 +71,8 @@ struct PrisonersDilemmaTests {
     // Iterations tests
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResultOverIteration() {
         let game = Game(
-            prisoner1: PrisonerCatelog.Defector(),
-            prisoner2: PrisonerCatelog.Cooperator(),
+            prisoner1: PrisonerCatalog.Defector(),
+            prisoner2: PrisonerCatalog.Cooperator(),
             scoringRules: Standard()
         )
         

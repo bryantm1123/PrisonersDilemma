@@ -1,8 +1,8 @@
 import Foundation
 
-class Game {
-    private var prisoner1: Prisoner
-    private var prisoner2: Prisoner
+class Game: ObservableObject {
+    @Published var prisoner1: Prisoner
+    @Published var prisoner2: Prisoner
     private let scoringRules: Scoring
     
     init(
@@ -34,15 +34,25 @@ class Game {
     public func play(iterations: Int = 1) {
         for _ in 0...iterations {
             let scores = computeScores(
-                prisoner1Action: prisoner1.action(),
-                prisoner2Action: prisoner2.action()
+                prisoner1Action: prisoner1.action,
+                prisoner2Action: prisoner2.action
             )
             prisoner1.score += scores.0
             prisoner2.score += scores.1
         }
     }
     
+    public func getNames() -> (String, String) {
+        (prisoner1.name, prisoner2.name)
+    }
+    
     public func getScores() -> (Int, Int) {
         (prisoner1.score, prisoner2.score)
     }
+    
+    public static let Default = Game(
+        prisoner1: PrisonerCatalog.Cooperator,
+        prisoner2: PrisonerCatalog.Defector,
+        scoringRules: Standard()
+    )
 }

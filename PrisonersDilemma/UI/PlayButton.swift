@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct PlayButton: View {
+    // TODO: Could receive a play action callback and call it on button tap
     var body: some View {
         Button {
             print("play tapped")  // TODO: implement

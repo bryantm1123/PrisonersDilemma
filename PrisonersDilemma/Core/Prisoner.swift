@@ -5,40 +5,34 @@ public enum Action {
     case defect
 }
 
-public protocol Prisoner {
-    var name: String { get }
-    var score: Int { get set }
+public struct Prisoner: Identifiable, Hashable, Equatable {
+    public static func == (lhs: Prisoner, rhs: Prisoner) -> Bool {
+        lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.score == rhs.score &&
+        lhs.action == rhs.action
+    }
     
-    func action() -> Action
-    func reaction(to: Action) -> Action
+    public let id: UUID = UUID()
+    public var name: String
+    public var score: Int
+    public var action: Action
 }
 
-public struct PrisonerCatelog {
-    struct Cooperator: Prisoner {
-        var name: String = "Cooperator Gator"
-        var score: Int = 0
+public struct PrisonerCatalog {
+    static let prisoners: [Prisoner] = [Cooperator, Defector]
     
-        func action() -> Action {
-            .cooperate
-        }
-        
-        func reaction(to: Action) -> Action {
-            .cooperate
-        }
-    }
+    static let Cooperator = Prisoner(
+        name: "Cooperator Gator",
+        score: 0,
+        action: .cooperate
+    )
     
-    struct Defector: Prisoner {
-        var name: String = "Defectorator"
-        var score: Int = 0
-        
-        func action() -> Action {
-            .defect
-        }
-        
-        func reaction(to: Action) -> Action {
-            .defect
-        }
-    }
+    static let Defector = Prisoner(
+        name: "Defectorator",
+        score: 0,
+        action: .defect
+    )
 }
 
 
