@@ -20,8 +20,12 @@ struct MainView: View {
                 game.play(iterations: Int(iterations))
             }
             SliderView(iterations: $iterations)
+            EraseScoresButton(
+                prisoner1: $game.prisoner1,
+                prisoner2: $game.prisoner2
+            )
         }
-        .frame(width: 600, height: 200)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         .padding()
     }
 }

@@ -6,18 +6,19 @@ struct PrisonerStack: View {
     
     var body: some View {
         VStack {
-            Text(prisoner.name)
-                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                .font(.title2)
             Picker(
                 selection: $prisoner) {
                     ForEach(prisoners) { prisoner in
                         Text(prisoner.name).tag(prisoner)
                     }
                 } label: {
-                    Text("Play Style")
+                    Text("")
                 }
             .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+            Text("\(prisoner.description)")
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .multilineTextAlignment(.center)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10))
         }
     }
 }
