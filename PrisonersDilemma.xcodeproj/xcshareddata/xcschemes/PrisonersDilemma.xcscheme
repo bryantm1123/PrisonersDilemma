@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:PrisonersDilemma.xctestplan"
+            reference = "container:PrisonersDilemmaTests/PrisonersDilemma.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

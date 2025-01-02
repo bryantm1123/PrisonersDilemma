@@ -21,16 +21,15 @@
       "parallelizable" : true,
       "target" : {
         "containerPath" : "container:PrisonersDilemma.xcodeproj",
-        "identifier" : "92A2BD2B2CEA0B9400C67838",
-        "name" : "PrisonersDilemmaTests"
+        "identifier" : "92A2BD352CEA0B9400C67838",
+        "name" : "PrisonersDilemmaUITests"
       }
     },
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:PrisonersDilemma.xcodeproj",
-        "identifier" : "92A2BD352CEA0B9400C67838",
-        "name" : "PrisonersDilemmaUITests"
+        "identifier" : "92A2BD2B2CEA0B9400C67838",
+        "name" : "PrisonersDilemmaTests"
       }
     }
   ],

@@ -31,8 +31,8 @@ class Game: ObservableObject {
         }
     }
     
-    public func play(iterations: Int) {
-        for _ in 1...iterations {
+    public func play(iterations: Int = 1) {
+        for _ in 0...iterations {
             let scores = computeScores(
                 prisoner1Action: prisoner1.action,
                 prisoner2Action: prisoner2.action
@@ -40,14 +40,6 @@ class Game: ObservableObject {
             prisoner1.score += scores.0
             prisoner2.score += scores.1
         }
-    }
-    
-    public func getNames() -> (String, String) {
-        (prisoner1.name, prisoner2.name)
-    }
-    
-    public func getScores() -> (Int, Int) {
-        (prisoner1.score, prisoner2.score)
     }
     
     public static let Default = Game(
