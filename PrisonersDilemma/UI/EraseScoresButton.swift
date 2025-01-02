@@ -16,8 +16,8 @@ struct EraseScoresButton: View {
 
 #Preview {
     struct Preview: View {
-        @State var prisoner1 = PrisonerCatalog.Cooperator
-        @State var prisoner2 = PrisonerCatalog.Defector
+        @State var prisoner1 = Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator)
+        @State var prisoner2 = Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator)
         
         var body: some View {
             EraseScoresButton(

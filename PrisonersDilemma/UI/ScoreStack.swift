@@ -16,8 +16,8 @@ struct ScoreStack: View {
 
 #Preview {
     struct Preview: View { // TODO: Maybe DRY up this preview struct
-        @State var prisoner1 = PrisonerCatalog.Cooperator
-        @State var prisoner2 = PrisonerCatalog.Defector
+        @State var prisoner1 = Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator)
+        @State var prisoner2 = Prisoner(score: 0, behavior: BehaviorCatalog.Defector)
         var body: some View {
             ScoreStack(
                 prisoner1: $prisoner1,

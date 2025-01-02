@@ -7,8 +7,8 @@ struct GameScoringTests {
     // Single iterations
     @Test func testBothCooperateGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatalog.Cooperator,
-            prisoner2: PrisonerCatalog.Cooperator,
+            prisoner1: BehaviorCatalog.Cooperator,
+            prisoner2: BehaviorCatalog.Cooperator,
             scoringRules: Standard()
         )
         
@@ -20,8 +20,8 @@ struct GameScoringTests {
     
     @Test func testBothDefectGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatalog.Defector,
-            prisoner2: PrisonerCatalog.Defector,
+            prisoner1: BehaviorCatalog.Defector,
+            prisoner2: BehaviorCatalog.Defector,
             scoringRules: Standard()
         )
         
@@ -33,8 +33,8 @@ struct GameScoringTests {
     
     @Test func testPrisonerOneCooperatesPrisonerTwoDefectsGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatalog.Cooperator,
-            prisoner2: PrisonerCatalog.Defector,
+            prisoner1: BehaviorCatalog.Cooperator,
+            prisoner2: BehaviorCatalog.Defector,
             scoringRules: Standard()
         )
         
@@ -46,8 +46,8 @@ struct GameScoringTests {
     
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: PrisonerCatalog.Defector,
-            prisoner2: PrisonerCatalog.Cooperator,
+            prisoner1: BehaviorCatalog.Defector,
+            prisoner2: BehaviorCatalog.Cooperator,
             scoringRules: Standard()
         )
         
@@ -60,8 +60,8 @@ struct GameScoringTests {
     // Multiple iterations
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResultOverIteration() {
         let game = Game(
-            prisoner1: PrisonerCatalog.Defector,
-            prisoner2: PrisonerCatalog.Cooperator,
+            prisoner1: BehaviorCatalog.Defector,
+            prisoner2: BehaviorCatalog.Cooperator,
             scoringRules: Standard()
         )
         

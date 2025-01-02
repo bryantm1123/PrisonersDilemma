@@ -34,8 +34,8 @@ class Game: ObservableObject {
     public func play(iterations: Int = 1) {
         for _ in 0...iterations {
             let scores = computeScores(
-                prisoner1Action: prisoner1.action,
-                prisoner2Action: prisoner2.action
+                prisoner1Action: prisoner1.behavior.action,
+                prisoner2Action: prisoner2.behavior.action
             )
             prisoner1.score += scores.0
             prisoner2.score += scores.1
@@ -43,8 +43,8 @@ class Game: ObservableObject {
     }
     
     public static let Default = Game(
-        prisoner1: PrisonerCatalog.Cooperator,
-        prisoner2: PrisonerCatalog.Defector,
+        prisoner1: Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator),
+        prisoner2: Prisoner(score: 0, behavior: BehaviorCatalog.Defector),
         scoringRules: Standard()
     )
 }
