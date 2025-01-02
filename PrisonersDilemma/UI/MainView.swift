@@ -7,14 +7,14 @@ struct MainView: View {
     var body: some View {
         VStack {
             HStack {
-                PrisonerStack(prisoner: $game.prisoner1, selectedBehavior: $game.prisoner1.behavior)
+                BehaviorStack(selectedBehavior: $game.prisoner1.behavior)
                 Spacer()
                 ScoreStack(
                     prisoner1: $game.prisoner1,
                     prisoner2: $game.prisoner2
                 )
                 Spacer()
-                PrisonerStack(prisoner: $game.prisoner2, selectedBehavior: $game.prisoner2.behavior)
+                BehaviorStack(selectedBehavior: $game.prisoner2.behavior)
             }
             PlayButton {
                 game.play(iterations: Int(iterations))

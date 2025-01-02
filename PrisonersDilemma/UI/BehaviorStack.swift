@@ -1,7 +1,6 @@
 import SwiftUI
 
-struct PrisonerStack: View {
-    @Binding var prisoner: Prisoner
+struct BehaviorStack: View {
     @Binding var selectedBehavior: Behavior
     private let behaviors = BehaviorCatalog.behaviors
     
@@ -28,7 +27,7 @@ struct PrisonerStack: View {
     struct Preview: View {
         @State var prisoner = Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator)
         var body: some View {
-            PrisonerStack(prisoner: $prisoner, selectedBehavior: $prisoner.behavior)
+            BehaviorStack(selectedBehavior: $prisoner.behavior)
         }
     }
     return Preview()
