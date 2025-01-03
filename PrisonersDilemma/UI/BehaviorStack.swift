@@ -6,6 +6,12 @@ struct BehaviorStack: View {
     
     var body: some View {
         VStack {
+            Image(selectedBehavior.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 300)
+                .cornerRadius(8)
+                .rotationEffect(.degrees(90)) // TODO: fix this?
             Picker(
                 selection: $selectedBehavior) {
                     ForEach(behaviors) { prisoner in
