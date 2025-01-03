@@ -7,8 +7,8 @@ struct GameScoringTests {
     // Single iterations
     @Test func testBothCooperateGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: BehaviorCatalog.Cooperator,
-            prisoner2: BehaviorCatalog.Cooperator,
+            prisoner1: Prisoner(strategy: StrategyCatalog.Cooperator),
+            prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
             scoringRules: Standard()
         )
         
@@ -20,8 +20,8 @@ struct GameScoringTests {
     
     @Test func testBothDefectGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: BehaviorCatalog.Defector,
-            prisoner2: BehaviorCatalog.Defector,
+            prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
+            prisoner2: Prisoner(strategy: StrategyCatalog.Defector),
             scoringRules: Standard()
         )
         
@@ -33,8 +33,8 @@ struct GameScoringTests {
     
     @Test func testPrisonerOneCooperatesPrisonerTwoDefectsGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: BehaviorCatalog.Cooperator,
-            prisoner2: BehaviorCatalog.Defector,
+            prisoner1: Prisoner(strategy: StrategyCatalog.Cooperator),
+            prisoner2: Prisoner(strategy: StrategyCatalog.Defector),
             scoringRules: Standard()
         )
         
@@ -46,8 +46,8 @@ struct GameScoringTests {
     
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResult() async throws {
         let game = Game(
-            prisoner1: BehaviorCatalog.Defector,
-            prisoner2: BehaviorCatalog.Cooperator,
+            prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
+            prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
             scoringRules: Standard()
         )
         
@@ -60,8 +60,8 @@ struct GameScoringTests {
     // Multiple iterations
     @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResultOverIteration() {
         let game = Game(
-            prisoner1: BehaviorCatalog.Defector,
-            prisoner2: BehaviorCatalog.Cooperator,
+            prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
+            prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
             scoringRules: Standard()
         )
         

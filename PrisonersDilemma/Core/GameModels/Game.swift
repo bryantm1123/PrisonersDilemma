@@ -13,6 +13,8 @@ class Game: ObservableObject {
         self.prisoner1 = prisoner1
         self.prisoner2 = prisoner2
         self.scoringRules = scoringRules
+        
+        UserDefaults().set(0, forKey: "defectSwitch")
     }
     
     private func computeScores(
@@ -34,17 +36,30 @@ class Game: ObservableObject {
     public func play(iterations: Int = 1) {
         for _ in 0...iterations {
             let scores = computeScores(
-                prisoner1Action: prisoner1.behavior.action,
-                prisoner2Action: prisoner2.behavior.action
+                prisoner1Action: prisoner1.strategy.behavior.action,
+                prisoner2Action: prisoner2.strategy.behavior.action
             )
             prisoner1.score += scores.0
             prisoner2.score += scores.1
+            
+            reactToOpponentAction()
         }
     }
     
     public static let Default = Game(
-        prisoner1: Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator),
-        prisoner2: Prisoner(score: 0, behavior: BehaviorCatalog.Defector),
+        prisoner1: Prisoner(score: 0, strategy: StrategyCatalog.Cooperator),
+        prisoner2: Prisoner(score: 0, strategy: StrategyCatalog.Defector),
         scoringRules: Standard()
     )
+    
+    private func reactToOpponentAction() {
+        let prisoner1Action = prisoner1.strategy.behavior.action
+        let prisoner2Action = prisoner2.strategy.behavior.action
+        
+        let prisoner1Reaction = prisoner1.strategy.behavior.reaction(prisoner2Action)
+        let prisoner2Reaction = prisoner2.strategy.behavior.reaction(prisoner1Action)
+        
+        prisoner1.strategy.behavior.action = prisoner1Reaction
+        prisoner2.strategy.behavior.action = prisoner2Reaction
+    }
 }

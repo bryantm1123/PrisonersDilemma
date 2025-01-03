@@ -1,27 +1,27 @@
 import SwiftUI
 
-struct BehaviorStack: View {
-    @Binding var selectedBehavior: Behavior
-    private let behaviors = BehaviorCatalog.behaviors
+struct StrategyStack: View {
+    @Binding var selectedStrategy: Strategy
+    private let strategies = StrategyCatalog.strategies
     
     var body: some View {
         VStack {
-            Image(selectedBehavior.imageName)
+            Image(selectedStrategy.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 300)
                 .cornerRadius(8)
                 .rotationEffect(.degrees(90)) // TODO: fix this?
             Picker(
-                selection: $selectedBehavior) {
-                    ForEach(behaviors) { prisoner in
+                selection: $selectedStrategy) {
+                    ForEach(strategies) { prisoner in
                         Text(prisoner.name).tag(prisoner)
                     }
                 } label: {
                     Text("")
                 }
             .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
-            Text("\(selectedBehavior.description)")
+            Text("\(selectedStrategy.description)")
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10))
@@ -31,9 +31,9 @@ struct BehaviorStack: View {
 
 #Preview {
     struct Preview: View {
-        @State var prisoner = Prisoner(score: 0, behavior: BehaviorCatalog.Cooperator)
+        @State var prisoner = Prisoner(score: 0, strategy: StrategyCatalog.Cooperator)
         var body: some View {
-            BehaviorStack(selectedBehavior: $prisoner.behavior)
+            StrategyStack(selectedStrategy: $prisoner.strategy)
         }
     }
     return Preview()
