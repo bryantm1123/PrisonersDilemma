@@ -48,7 +48,7 @@ struct StrategyCatalog {
     
     // never forgets - elephant - initially cooperates; if defected upon, will only defect from that point on
     static let NeverForgets = Strategy(
-        name: "Never-forgetter-Elephant",
+        name: "Never-forgetephant",
         description: "This elephant never forgets and never forgives. One double-cross and you've made an enemy for life!",
         imageName: "elephant",
         behavior: BehaviorCatelog.NeverForget
@@ -63,5 +63,7 @@ struct StrategyCatalog {
     )
     
     // TODO: win-stay/lose-switch - chameleon - if wins round, next action stays the same. if loses round, picks one of the other actions at random.
+    
+    // TODO: Hybernator - bear - this one's fierceness comes in waves. When hybernating, the bear wants to sleep in peace, but when it wakes up, look out!
     
 }
