@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var game: Game = Game.Default
-    @State var iterations: Double = 1.0
+    @State var iterations: Double = 0.0
     
     var body: some View {
         VStack {

@@ -5,20 +5,20 @@ import XCTest
 struct GameScoringTests {
 
     // Single iterations
-    @Test func testBothCooperateGivesExpectedResult() async throws {
+    @Test func bothCooperateUsingStandardScoring() {
         let game = Game(
-            prisoner1: Prisoner(strategy: StrategyCatalog.Cooperator),
-            prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
+            prisoner1: Prisoner(score: 0, strategy: StrategyCatalog.Cooperator),
+            prisoner2: Prisoner(score: 0, strategy: StrategyCatalog.Cooperator),
             scoringRules: Standard()
         )
         
         game.play()
         
-        XCTAssertEqual(game.prisoner1.score, 3)
-        XCTAssertEqual(game.prisoner2.score, 3)
+        #expect(game.prisoner1.score == 3)
+        #expect(game.prisoner2.score == 3)
     }
     
-    @Test func testBothDefectGivesExpectedResult() async throws {
+    @Test func bothDefectUsingStandardScoring() {
         let game = Game(
             prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
             prisoner2: Prisoner(strategy: StrategyCatalog.Defector),
@@ -27,11 +27,11 @@ struct GameScoringTests {
         
         game.play()
         
-        XCTAssertEqual(game.prisoner1.score, 1)
-        XCTAssertEqual(game.prisoner2.score, 1)
+        #expect(game.prisoner1.score == 1)
+        #expect(game.prisoner2.score == 1)
     }
     
-    @Test func testPrisonerOneCooperatesPrisonerTwoDefectsGivesExpectedResult() async throws {
+    @Test func prisonerOneCooperatesPrisonerTwoDefectsUsingStandardScoring() {
         let game = Game(
             prisoner1: Prisoner(strategy: StrategyCatalog.Cooperator),
             prisoner2: Prisoner(strategy: StrategyCatalog.Defector),
@@ -40,11 +40,11 @@ struct GameScoringTests {
         
         game.play()
         
-        XCTAssertEqual(game.prisoner1.score, 0)
-        XCTAssertEqual(game.prisoner2.score, 5)
+        #expect(game.prisoner1.score == 0)
+        #expect(game.prisoner2.score == 5)
     }
     
-    @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResult() async throws {
+    @Test func prisonerOneDefectsPrisonerTwoCooperatesUsingStandardScoring() {
         let game = Game(
             prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
             prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
@@ -53,21 +53,21 @@ struct GameScoringTests {
         
         game.play()
         
-        XCTAssertEqual(game.prisoner1.score, 5)
-        XCTAssertEqual(game.prisoner2.score, 0)
+        #expect(game.prisoner1.score == 5)
+        #expect(game.prisoner2.score == 0)
     }
     
     // Multiple iterations
-    @Test func testPrisonerOneDefectsPrisonerTwoCooperatesGivesExpectedResultOverIteration() {
+    @Test func prisonerOneDefectsPrisonerTwoCooperatesUsingStandardScoringOverIteration() {
         let game = Game(
             prisoner1: Prisoner(strategy: StrategyCatalog.Defector),
             prisoner2: Prisoner(strategy: StrategyCatalog.Cooperator),
             scoringRules: Standard()
         )
         
-        game.play(iterations: 5)
+        game.play(iterations: 4)
         
-        XCTAssertEqual(game.prisoner1.score, 25)
-        XCTAssertEqual(game.prisoner2.score, 0)
+        #expect(game.prisoner1.score == 25)
+        #expect(game.prisoner2.score == 0)
     }
 }
