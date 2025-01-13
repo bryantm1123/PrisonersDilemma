@@ -22,7 +22,8 @@ struct MainView: View {
             SliderView(iterations: $iterations)
             EraseScoresButton(
                 prisoner1: $game.prisoner1,
-                prisoner2: $game.prisoner2
+                prisoner2: $game.prisoner2,
+                defectSwitch: $game.defectSwitch
             )
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)

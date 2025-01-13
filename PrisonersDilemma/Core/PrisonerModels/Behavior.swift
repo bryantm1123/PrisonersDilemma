@@ -14,22 +14,22 @@ struct Behavior: Hashable {
         lhs.action == rhs.action
     }
     var action: Action
-    var reaction: (Action) -> Action
+    var reaction: (Action, DefectSwitch?) -> Action
 }
 
 struct BehaviorCatelog {
     static let Cooperation = Behavior(
-        action: .cooperate) { _ in
+        action: .cooperate) { _,_  in
                 .cooperate
         }
     
     static let Defection = Behavior(
-        action: .defect) { _ in
+        action: .defect) { _,_  in
                 .defect
         }
     
     static let TitForTat = Behavior(
-        action: .cooperate) { action in
+        action: .cooperate) { action, _  in
             switch action {
             case .cooperate: return .cooperate
             case .defect: return .defect
@@ -37,18 +37,18 @@ struct BehaviorCatelog {
         }
     
     static let NeverForget = Behavior(
-        action: .cooperate) { action in
+        action: .cooperate) { action, defectSwitch in
             if action == .defect {
-                UserDefaults().set(1, forKey: "defectSwitch")
+                defectSwitch?.setSwitch(to: .on)
             }
-            
-            let defectSwitchValue = UserDefaults().integer(forKey: "defectSwitch")
-            if defectSwitchValue == 0 { return .cooperate }
+            if defectSwitch?.getSwitchState() == .off { 
+                return .cooperate // FixMe: Seems to be a bug updating properly and returning correct action when switch is turned off by score reset button
+            }
             return .defect
         }
     
     static let WildCard = Behavior(
-        action: .cooperate) { _ in
+        action: .cooperate) { _, _ in
             var chance = Int.random(in: 0...99)
             if chance % 2 == 0 { return .cooperate }
             return .defect

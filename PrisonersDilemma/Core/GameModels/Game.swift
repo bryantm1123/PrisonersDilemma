@@ -3,18 +3,19 @@ import Foundation
 class Game: ObservableObject {
     @Published var prisoner1: Prisoner
     @Published var prisoner2: Prisoner
+    @Published var defectSwitch: DefectSwitch
     private let scoringRules: Scoring
     
     init(
         prisoner1: Prisoner,
         prisoner2: Prisoner,
+        defectSwitch: DefectSwitch = DefectSwitch(),
         scoringRules: Scoring
     ) {
         self.prisoner1 = prisoner1
         self.prisoner2 = prisoner2
+        self.defectSwitch = defectSwitch
         self.scoringRules = scoringRules
-        
-        UserDefaults().set(0, forKey: "defectSwitch")
     }
     
     private func computeScores(
@@ -56,8 +57,8 @@ class Game: ObservableObject {
         let prisoner1Action = prisoner1.strategy.behavior.action
         let prisoner2Action = prisoner2.strategy.behavior.action
         
-        let prisoner1Reaction = prisoner1.strategy.behavior.reaction(prisoner2Action)
-        let prisoner2Reaction = prisoner2.strategy.behavior.reaction(prisoner1Action)
+        let prisoner1Reaction = prisoner1.strategy.behavior.reaction(prisoner2Action, defectSwitch)
+        let prisoner2Reaction = prisoner2.strategy.behavior.reaction(prisoner1Action, defectSwitch)
         
         prisoner1.strategy.behavior.action = prisoner1Reaction
         prisoner2.strategy.behavior.action = prisoner2Reaction
