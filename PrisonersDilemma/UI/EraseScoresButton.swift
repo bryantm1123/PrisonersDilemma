@@ -13,7 +13,7 @@ struct EraseScoresButton: View {
         } label: {
             Image(systemName: "eraser")
                 .frame(width: 24, height: 24)
-        }
+        }.padding(EdgeInsets(top: 0, leading: 5, bottom: 10, trailing: 0))
     }
 }
 

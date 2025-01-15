@@ -10,7 +10,7 @@ struct PlayButton: View {
                 .frame(width: 24, height: 24)
         }
         .frame(width: 24, height: 24)
-        .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 5))
     }
 }
 
