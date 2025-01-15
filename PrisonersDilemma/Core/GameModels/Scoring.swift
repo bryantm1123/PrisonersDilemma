@@ -8,8 +8,8 @@ protocol Scoring {
 }
 
 struct Standard: Scoring {
-    let bothCooperate: (Int, Int) = (3, 3)
+    let bothCooperate: (Int, Int) = (5, 5)
     let bothDefect: (Int, Int) = (1, 1)
-    let prisoner1CooperatesPrisoner2Defects: (Int, Int) = (0, 5)
-    let prisoner1DefectsPrisoner2Cooperates: (Int, Int) = (5, 0)
+    let prisoner1CooperatesPrisoner2Defects: (Int, Int) = (2, 3)
+    let prisoner1DefectsPrisoner2Cooperates: (Int, Int) = (3, 2)
 }

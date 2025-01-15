@@ -1,10 +1,3 @@
-//
-//  PrisonersDilemmaUITests.swift
-//  PrisonersDilemmaUITests
-//
-//  Created by Matt Bryant on 11/17/24.
-//
-
 import XCTest
 
 final class PrisonersDilemmaUITests: XCTestCase {
